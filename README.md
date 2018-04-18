@@ -1,3 +1,7 @@
-Alfred Sentry Plugin
+# Alfred Sentry Plugin
 
-[3rd party Alfred workflow](http://www.deanishe.net/alfred-workflow/)
+
+## Build instructions
+
+### Install 3rd party libraries
+`pip install --target=lib/ Alfred-Workflow==1.32`

@@ -1,2 +1,4 @@
+*.egg-info
+
 # 3rd party libs
-lib/
+workflow/

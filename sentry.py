@@ -1,6 +1,9 @@
 import argparse
 import sys
-from lib.workflow import (
+
+# sys.path.append('./lib/workflow')
+
+from workflow import (
     Workflow,
     ICON_WEB,
     ICON_WARNING,

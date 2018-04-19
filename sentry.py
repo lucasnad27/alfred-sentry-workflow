@@ -18,7 +18,6 @@ def get_projects(api_key):
     API reference
     https://docs.sentry.io/api/projects/get-project-index/
     """
-    log.debug('here')
     url = BASE_URL + 'api/0/projects/'
     headers = {'Authorization': 'Bearer {}'.format(api_key)}
     r = web.get(url, headers=headers)
@@ -123,7 +122,7 @@ def main(wf):
         args = ' '.join([org_slug, project_slug, url])
         wf.add_item(
             title=project['name'],
-            subtitle=project['slug'],
+            subtitle='hello',
             arg=args,
             valid=True,
             icon=ICON_WEB)

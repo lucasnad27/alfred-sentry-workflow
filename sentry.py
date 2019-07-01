@@ -1,4 +1,5 @@
 import argparse
+import os
 import sys
 
 from workflow import (
@@ -8,7 +9,7 @@ from workflow import (
     web,
     PasswordNotFound)
 
-BASE_URL = "https://sentry.io/"
+BASE_URL = os.getenv('BASE_URL', 'https://sentry.io/')
 
 log = None
 
